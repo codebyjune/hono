@@ -1,0 +1,29 @@
+{
+  "name": "my-app",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.0.12",
+    "@hono/zod-validator": "^0.9.0",
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^13.0.1",
+    "drizzle-orm": "^0.45.2",
+    "hono": "^4.12.32",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^3.0.0",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^26.1.1",
+    "drizzle-kit": "^0.31.10",
+    "tsx": "^4.23.0",
+    "typescript": "^7.0.2"
+  }
+}
